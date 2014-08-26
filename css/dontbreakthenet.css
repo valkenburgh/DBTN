@@ -6946,6 +6946,7 @@ width: 100%;
 @media only screen and (min-width: 400px ) {
   section.myths img {
     width: 393px;
+	max-width:100%;
   }
   
 }
@@ -6955,8 +6956,8 @@ width:100%;
 @media only screen and (min-width: 400px ) {
   section.myths iframe {
     width: 393px;
+	max-width: 100%;
   }
-  
 }
 section.myths #intro p {
   font-size: 20px;
@@ -6964,6 +6965,8 @@ section.myths #intro p {
   max-width: 800px;
   text-align: justify;
 }
+
+
 section.history {
   background-color: #313142;
   color: #ffffff;
