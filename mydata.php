@@ -6,7 +6,7 @@ $zip = $_POST['zip'];
 $comment = $_POST['action_comment'];
 
 //this is where the creating of the csv takes place
-$cvsData = $name . "," . $email . "," . $address . "," . $zip ."\n";
+$cvsData = $name . "," . $email . "," . $address . "," . $zip . "," . '"' . $comment . '"' ."\n";
 $fp = fopen("data.csv","a"); // $fp is now the file pointer to file $filename
 
 if($fp){
@@ -19,9 +19,9 @@ fclose($fp); // Close the file
  
 if(isset($_POST['email'])) {
  
-    // EDIT THE 2 LINES BELOW AS REQUIRED
+    // EDIT THE 2 LINES BELOW AS REQUIRED 
  
-    $email_to = "pvanvalkenburgh@techfreedom.org";
+    $email_to = "openinternet@fcc.gov";
     $email_subject = "Open Internet Reply Comment";
     $first_name = $_POST['name']; // required
     $email_from = $_POST['email']; // required
